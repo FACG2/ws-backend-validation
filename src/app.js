@@ -1,10 +1,16 @@
 import express from 'express';
+import bodyParser from 'body-parser';
 
-import apiRouter from './routes';
+import apiRouter from './api/routes';
 
 const app = express();
 
-app.get('/', function (req, res) {
+// Register bodyParser middleware
+app.use(bodyParser.urlencoded({ extended: false }))
+app.use(bodyParser.json())
+
+// Register public routes
+app.get('/', (req, res) => {
   res.send('Hello World')
 });
 
