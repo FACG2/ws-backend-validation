@@ -1,0 +1,28 @@
+{
+  "name": "ws-backend-validation",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon --exec babel-node src/app.js",
+    "test": "babel-tape-runner test/**/*.js",
+    "lint": "eslint src/*.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "express": "^4.16.2"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-eslint": "^8.0.1",
+    "babel-preset-env": "^1.6.0",
+    "babel-tape-runner": "^2.0.1",
+    "eslint": "^4.9.0",
+    "nodemon": "^1.12.1",
+    "supertest": "^3.0.0",
+    "tape": "^4.8.0"
+  }
+}
